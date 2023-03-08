@@ -1,0 +1,97 @@
+<!DOCTTYPE html>
+<html>
+<head>
+<title>About us</title>
+<link rel="stylesheet" type="text/css" href="style4.css">
+<link=rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav class="nav nav_top">
+<div class="logo">
+<a href="project1.html"><img src="https://media-exp1.licdn.com/dms/image/C560BAQElUigENTqY3Q/company-logo_200_200/0/1610359788325?e=2147483647&v=beta&t=uHGN0dd5IGi4WIlNx5skHADFdOxFIGo8MS5pliCdSbo" width="50"></a>
+</div>
+<div class="nav_side">
+<a href="about.html">About us</a>
+<a href="service.html">Services</a>
+<a href="blog.html">Blogs</a>
+<a href="contact.html">Contact</a>
+<a href="#">Login/Register</a>
+</div>
+</nav>
+<div class="about_us">
+<h2>About Us</h2>
+<div class="about_content">
+<p>duis pretium non ex sodales.
+Cutting-edge cell & molecular biology, engineering,
+antibody discovery & more. Customized & integrated.
+Single-use bioreactors. American-made. Integrated CRO and CDMO.
+Full product lifecycle. Services: Analytical Methods, 
+Regulatory Support, Process Development, Clinical Trials Support.</p>
+</div>
+<hr>
+<h2>Our Mission</h2>
+<p>Learn More! Worldwide Offers Therapeutic Expertise & 
+Vital Strategic Services. Innovative Solutions.
+Global Expertise. 30 Years of Experience. Advanced Workflow Process.
+Award-Winning. Highlights: Full-Service Clinical Research Organization,
+High Quality Staff Available.duis pretium non ex sodales.</p>
+</div>
+<div class="feed">
+<h2>Write a review</h2>
+<div class="feed_form">
+<form name="submit-googlesheet" method="post">
+<input type="text" name="Text" placeholder="Name"><br>
+<input type="email" name="Email" placeholder="Email ID"><br>
+<input type="number" name="Number" placeholder="Contact Number"><br>
+<textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+<button type="submit">Submit</button>
+</form>
+</div>
+</div>
+<footer>
+<div class="footer_logo">
+<a href="#"><img src="https://media-exp1.licdn.com/dms/image/C560BAQElUigENTqY3Q/company-logo_200_200/0/1610359788325?e=2147483647&v=beta&t=uHGN0dd5IGi4WIlNx5skHADFdOxFIGo8MS5pliCdSbo" width="150"></a>
+</div>
+<div class="pages">
+<h3>Pages</h3>
+<a href="about.html">About Us</a>
+<a href="service.html">Services</a>
+<a href="blog.html">Blogs</a>
+<a href="">Login</a>
+<a href="">Sign Up</a>
+</div>
+<div class="doc">
+<h3>Documents</h3>
+<a href="">Privacy Policy</a>
+<a href="">Terms of Us</a>
+<a href="">Refund Policy</a>
+</div>
+<div class="social">
+<h3>Follow Us</h3>
+<a href="https://www.instagram.com/1stopai"</a>
+<a href="https://www.instagram.com/1stopai"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+<a href="https://www.twitter.com/1stopai"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+</div>
+<div class="contact">
+<h3>Contact Us</h3>
+<a href="https://api.whatsapp.com/send/phone: +9198882762589"<i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+<a href="tel: +918932456909"<i class="fa fa-phone" aria-hidden="true"></i></a>
+<a href="mailto: support@1stop.ai"<i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+</div>
+<hr>
+<p>Copyright &copy; 2022 1stop.All rights reserved</p>
+</footer>
+<script type="text/javascript">
+ const scriptURL = 'https://script.google.com/macros/s/AKfycbz7I_J8Qp3hKWpyB-DQbIp4jRDPn3TIGt2V9523wWK84iMWC5n_NdXetkhZ_i9SWTMq/exec'
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon.."))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>
+</body>
+</html>
+
